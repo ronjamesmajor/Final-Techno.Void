@@ -1,0 +1,209 @@
+.mobileheader {
+    display: none;
+}
+
+.hiding-nav {
+    display: none;
+}
+
+.navbar {
+    margin-bottom: 4vh;
+    text-decoration: none;
+}
+
+.mobile {
+    display: none;
+}
+
+
+#bwar, #vegas, #skynet, #cardano, #AR {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .1));
+}
+
+main {
+    margin-left: 0%;
+}
+
+footer {
+    display: none;
+}
+
+.countdown {
+    margin-bottom: 1rem;
+}
+
+.card-deck {
+    box-shadow: none !important;
+}
+
+#navcard {
+    width: 30rem;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+#navcard:first-of-type {
+    margin-top: 2rem;
+}
+
+
+/*Styles for Small Mobile Screens*/
+
+@media (min-width:200px) and (max-width:700px) {
+    .hiding-nav {
+        display: block;
+    }
+
+    footer {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .main {
+        margin: 0px;
+        margin-top: 3rem;
+    }
+
+    .normal, #cointhing, .mobileheader, .sidenav {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    article {
+        margin-top: 4rem;
+    }
+
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: unset;
+    }
+
+    #navcard {
+        display: none;
+    }
+
+    .card {
+        margin-right: auto;
+        width: auto;
+        margin-top: 1rem;
+
+    }
+
+    .card-body>.btn-primary, .card-body>.btn-secondary {
+        opacity: 0%;
+    }
+
+    .text-end {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center !important;
+    }
+
+    .meta-card {
+        transform: none;
+        min-width: 75vw;
+    }
+
+
+}
+
+
+/*Styles for Medium / Large Mobile Screens*/
+
+@media (min-width:700px) and (max-width:1310px) {
+    .hiding-nav {
+        display: none;
+    }
+
+    .main {
+        margin: 0px;
+    }
+
+    .hiding-nav {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: unset;
+    }
+
+    #navcard {
+        margin: 1rem;
+        min-height: 90%;
+        margin-bottom: 15px;
+
+    }
+
+    #navcard:first-of-type {
+        margin-top: 1rem;
+    }
+
+    .card {
+        margin-right: auto;
+        width: auto;
+        margin-top: 1rem;
+
+    }
+
+    footer {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .card-body>.btn-primary, .card-body>.btn-secondary {
+        opacity: 0%;
+    }
+
+    .text-end {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center !important;
+    }
+
+    .meta-card {
+        transform: none;
+        min-width: 75vw;
+    }
+
+    .mobileheader {
+        display: flex;
+        max-width: 25%;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
