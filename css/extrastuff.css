@@ -59,6 +59,10 @@ footer {
         display: table;
     }
 
+    ol {
+        padding-left: 0rem;
+    }
+
     footer {
         display: block;
         margin-top: 1rem;

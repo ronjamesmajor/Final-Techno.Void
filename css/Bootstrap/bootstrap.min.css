@@ -53,7 +53,7 @@
     --bs-light-rgb: 248, 249, 250;
     --bs-dark-rgb: 70, 83, 98;
     /*Black Coral*/
-    --bs-white-rgb: 255, 255, 255;
+    --bs-white-rgb: 245, 245, 220; /*beige.*/
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
@@ -613,7 +613,9 @@ progress {
 
 .figure-img {
     margin-bottom: .5rem;
-    line-height: 1
+    line-height: 1;
+    margin-left: auto; /*Added centering*/
+    margin-right: auto;
 }
 
 .figure-caption {

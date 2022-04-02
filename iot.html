@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Coolness, Technology, Void, Bleak Future, Dystopia, Social Engineering, Manipulation, Freedom" />
-    <link href="css/Bootstrap/bootstrap-grid.css" rel="stylesheet" />
-    <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/sidebars.css" rel="stylesheet" />
-    <link href="css/extrastuff.css" rel="stylesheet" />
-    <title>Techno.Void: Internet of Things</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+            content="Coolness, Technology, Void, Bleak Future, Dystopia, Social Engineering, Manipulation, Freedom" />
+        <link href="css/Bootstrap/bootstrap-grid.css" rel="stylesheet" />
+        <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link href="css/sidebars.css" rel="stylesheet" />
+        <link href="css/topbar.css" rel="stylesheet" />
+        <link href="css/extrastuff.css" rel="stylesheet" />
+        <title>Techno.Void</title>
+    </head>
 
 <body>
-    <section class="mb-3 hiding-nav">
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarToggleExternalContent5" aria-controls="navbarToggleExternalContent5"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-hamburger"></i>
-                </button>
-            </div>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent5">
-            <div class="bg-light shadow-3 p-4">
-                <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-                <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
-                <button class="btn btn-link btn-block m-0">Link 3</button>
-            </div>
+    <div class="text-center mobileheader">
+
+        <img src="./assets/TechnoVoidLogo.svg" class="img-fluid" alt="World Wide Techno.Void">
+
+    </div>
+    <!--Taken an adapted from https://www.sliderrevolution.com/resources/slide-menu/-->
+    <nav class="navbar hiding-nav fixed-top navbar-dark bg-dark text-white">
+        <div class="menu">
+            <img class="img-fluid" style="size: 15%; padding-bottom:1vh;" src="./assets/voidburger.png" /><br /> 
+            <span><a href="./index.html"><img style="size: 25%;" src="./assets/home.png" /><br /></a></span> 
+            <span><a href="./index.html"></a>Home<br /></a></span> 
+            <span><a href="./www.html"><img style="size: 25%;" src="./assets/globe.png" /><br /></a></span> 
+            <span><a href="./www.html"></a>WWW<br /></a></span> 
+            <span><a href="./iot.html"><img style="size: 25%;" src="./assets/network.png" /><br /></a></span> 
+            <span><a href="./iot.html"></a>IoT<br /></a></span> 
+            <span><a href="./bchain.html"><img style="size: 25%;" src="./assets/bitcoin.png" /><br /></a></span> 
+            <span><a href="./bchain.html"></a>ADA<br /></a></span> 
+            <span><a href="./ar.html"><img style="size: 25%;" src="./assets/vr.png" /><br /></a></span> 
+            <span><a href="./ar.html"></a>AR<br /></a></span> 
         </div>
-    </section>
+    </nav>
+
     <nav class="sidenav flex-column">
         <div class="sidenav d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
             <a href="index.html" style="align-self: center;"
@@ -94,45 +100,47 @@
     </nav>
     <main>
         <div class="container-fluid table-responsive text-white">
-            <div class="card text-end bg-dark" style=" width: 30rem; margin-left: auto; margin-top: 2rem;">
+            <div id="navcard" class="card text-end bg-dark">
                 <img src="./assets/web.png" class="card-img-top" alt="Image of depressed woman coder">
                 <div class="card-body">
                     <h5 class="card-title" style="font-family: MADSENSE;">Evolution of the World Wide Web</h5>
                     <p class="card-text">Join us in exploring the history of the web!</p>
-                    <a href="./www.html" class="btn btn-primary">From 1.0 to 3.0 and Beyond!</a>
+                    <a href="./www.html" class="btn btn-primary stretched-link">From 1.0 to 3.0 and Beyond!</a>
                 </div>
             </div>
-            <div class="card text-end bg-dark" style="width: 30rem; margin-left: auto; margin-top: 1rem;">
+            <div id="navcard" class="card text-end bg-dark">
                 <img src="./assets/iot.png" class="card-img-top" alt="Bleak Internet of Things Image">
                 <div class="card-body">
                     <h5 class="card-title" style="font-family: MADSENSE;">The Internet of Things</h5>
                     <p class="card-text">FitBits, Nests, "Smart" all-the-things, and More...</p>
-                    <a href="./iot.html" class="btn btn-secondary">Hey Siri, Take me there</a>
+                    <a href="./iot.html" class="btn btn-secondary stretched-link">Hey Siri, Take me there</a>
                 </div>
             </div>
-            <div class="card text-end bg-dark" style="width: 30rem; margin-left: auto; margin-top: 1rem;">
+            <div id="navcard" class="card text-end bg-dark">
                 <img src="./assets/blkch.png" class="card-img-top" alt="Sinister Looking Bitcoin Man">
                 <div class="card-body">
                     <h5 class="card-title" style="font-family: MADSENSE;">Blockchain</h5>
                     <p class="card-text">Ever wonder why Doge never mooned?</p>
-                    <a href="./bchain.html" class="btn btn-primary">Elon did nothing wrong.</a>
+                    <a href="./bchain.html" class="btn btn-primary stretched-link">Elon did nothing wrong.</a>
                 </div>
             </div>
-            <div class="card text-end bg-dark" style="width: 30rem; margin-left: auto; margin-top: 1rem;">
+            <div id="navcard" class="card text-end bg-dark">
                 <img src="./assets/aug.png" class="card-img-top" alt="Two sad people using devices overlayed with HTML">
                 <div class="card-body">
                     <h5 class="card-title" style="font-family: MADSENSE;">Augmented Reality</h5>
                     <p class="card-text">Seeing <em>is</em> believing.</p>
-                    <a href="./ar.html" class="btn btn-primary">Can't wait for Neuralink....</a>
+                    <a href="./ar.html" class="btn btn-primary stretched-link">Can't wait for Neuralink....</a>
                 </div>
             </div>
 
         </div>
     </main>
     <article class="meta-card container text-white rounded bg-dark" style="max-width: 45vw;">
-        <h2 style="font-family: MADSENSE; text-align: center;">The InterWeB of Thangz</h2>
-        <div>
-            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+        <h2 class="normal" style="font-family: MADSENSE; text-align: center;">WELCOME TO TECHNO VOID</h2>
+        <h2 class="mobile" style="font-family: MADSENSE; text-align: center;"><img class="img-fluid" src="./assets/TechnoVoidLogo.png"></h2>
+        <div id="cointhing">
+            <script  class="rounded" type="text/javascript"
+                src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
             <div id="coinmarketcap-widget-marquee" coins="1,1027,825,2010,74,18876,5426,1697,52,5805,1934,15888"
                 currency="CAD" theme="light" transparent="true" show-symbol-logo="true"></div>
         </div>
@@ -214,5 +222,34 @@
         </p>
     </article>
 </body>
+<!--Footer taken from MD Bootstrap-->
+<footer class="bg-dark text-center text-white">
+    <p class="text-center" style="font-family: MADSENSE;">Join us In The FeDiVErSE</p>
+    <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="https://joinmastadon.org" role="button"><img
+                    style="width: 4vw;" src="./assets/mastadon.png"></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://writefreely.org" role="button"><img
+                    style="width: 4vw;" src="./assets/writefreely.png"></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://pleroma.social" role="button"><img
+                    style="width: 4vw;" src="./assets/pleroma.png"></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://pixelfed.org" role="button"><img
+                    style="width: 4vw;" src="./assets/pixelfed.png"></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://diaspora.social" role="button"><img
+                    style="width: 4vw;" src="./assets/diaspora.png"></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://join-lemmy.org" role="button"><img
+                    style="width: 4vw;" src="./assets/lemmy.png"></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://odysee.com" role="button"><img
+                    style="width: 4vw;" src="./assets/odysee.png"></a>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <script type="text/javascript">
+            document.write("Copyright " + new Date().getFullYear());
+        </script>
+        <a class="text-white" href="./index.html">Techno.Void</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 
-<
+</html>
