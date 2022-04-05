@@ -18,6 +18,7 @@ html {
   top: 0;
   bottom: 0;
   left: 0;
+  z-index: 9999999; /*necessary for some reason so that my translated content feed doesn't cover links*/
 }
 
 

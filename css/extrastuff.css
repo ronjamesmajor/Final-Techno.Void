@@ -41,6 +41,10 @@ footer {
     box-shadow: none !important;
 }
 
+.front {
+    filter: sepia(60%);
+}
+
 #navcard {
     width: 30rem;
     margin-left: auto;
